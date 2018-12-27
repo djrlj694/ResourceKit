@@ -10,6 +10,7 @@
 		32C3F3F821D5638900350229 /* ResourceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C3F3EE21D5638900350229 /* ResourceKit.framework */; };
 		32C3F3FD21D5638900350229 /* ResourceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C3F3FC21D5638900350229 /* ResourceKitTests.swift */; };
 		32C3F3FF21D5638900350229 /* ResourceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C3F3F121D5638900350229 /* ResourceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32C3F40921D5653300350229 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32C3F40821D5653300350229 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		32C3F3F721D5638900350229 /* ResourceKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResourceKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C3F3FC21D5638900350229 /* ResourceKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceKitTests.swift; sourceTree = "<group>"; };
 		32C3F3FE21D5638900350229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32C3F40821D5653300350229 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		32C3F3E421D5638900350229 = {
 			isa = PBXGroup;
 			children = (
+				32C3F40821D5653300350229 /* README.md */,
 				32C3F3F021D5638900350229 /* ResourceKit */,
 				32C3F3FB21D5638900350229 /* ResourceKitTests */,
 				32C3F3EF21D5638900350229 /* Products */,
@@ -71,6 +74,7 @@
 		32C3F3F021D5638900350229 /* ResourceKit */ = {
 			isa = PBXGroup;
 			children = (
+				32C3F40A21D5654400350229 /* Sources */,
 				32C3F3F121D5638900350229 /* ResourceKit.h */,
 				32C3F3F221D5638900350229 /* Info.plist */,
 			);
@@ -84,6 +88,13 @@
 				32C3F3FE21D5638900350229 /* Info.plist */,
 			);
 			path = ResourceKitTests;
+			sourceTree = "<group>";
+		};
+		32C3F40A21D5654400350229 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C3F40921D5653300350229 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
