@@ -11,6 +11,16 @@
 		32C3F3FD21D5638900350229 /* ResourceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C3F3FC21D5638900350229 /* ResourceKitTests.swift */; };
 		32C3F3FF21D5638900350229 /* ResourceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C3F3F121D5638900350229 /* ResourceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32C3F40921D5653300350229 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 32C3F40821D5653300350229 /* README.md */; };
+		32C3F40C21D5677900350229 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 32C3F40B21D5677900350229 /* LICENSE */; };
+		32C3F40F21D569B500350229 /* Data+ResourceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C3F40E21D569B500350229 /* Data+ResourceKit.swift */; };
+		32C3F41421D569CC00350229 /* AnyDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C3F41221D569CC00350229 /* AnyDecoder.swift */; };
+		32C3F41621D63FDF00350229 /* AnyEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C3F41521D63FDF00350229 /* AnyEncoder.swift */; };
+		32C3F41821D6406000350229 /* Encodable+ResourceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C3F41721D6406000350229 /* Encodable+ResourceKit.swift */; };
+		32C3F41C21D6459B00350229 /* Fake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C3F41B21D6459B00350229 /* Fake.swift */; };
+		32C3F41E21D6466200350229 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C3F41D21D6466200350229 /* Weather.swift */; };
+		32C3F42021D646AA00350229 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C3F41F21D646AA00350229 /* CurrentWeather.swift */; };
+		32C3F42221D6476200350229 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C3F42121D6476100350229 /* Coordinate.swift */; };
+		32C3F42721D6793C00350229 /* DarkSkyForcastRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = 32C3F42621D6793C00350229 /* DarkSkyForcastRequest.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +41,16 @@
 		32C3F3FC21D5638900350229 /* ResourceKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceKitTests.swift; sourceTree = "<group>"; };
 		32C3F3FE21D5638900350229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32C3F40821D5653300350229 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		32C3F40B21D5677900350229 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		32C3F40E21D569B500350229 /* Data+ResourceKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+ResourceKit.swift"; sourceTree = "<group>"; };
+		32C3F41221D569CC00350229 /* AnyDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyDecoder.swift; sourceTree = "<group>"; };
+		32C3F41521D63FDF00350229 /* AnyEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyEncoder.swift; sourceTree = "<group>"; };
+		32C3F41721D6406000350229 /* Encodable+ResourceKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+ResourceKit.swift"; sourceTree = "<group>"; };
+		32C3F41B21D6459B00350229 /* Fake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fake.swift; sourceTree = "<group>"; };
+		32C3F41D21D6466200350229 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		32C3F41F21D646AA00350229 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		32C3F42121D6476100350229 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		32C3F42621D6793C00350229 /* DarkSkyForcastRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DarkSkyForcastRequest.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				32C3F40821D5653300350229 /* README.md */,
+				32C3F40B21D5677900350229 /* LICENSE */,
 				32C3F3F021D5638900350229 /* ResourceKit */,
 				32C3F3FB21D5638900350229 /* ResourceKitTests */,
 				32C3F3EF21D5638900350229 /* Products */,
@@ -75,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				32C3F40A21D5654400350229 /* Sources */,
-				32C3F3F121D5638900350229 /* ResourceKit.h */,
 				32C3F3F221D5638900350229 /* Info.plist */,
 			);
 			path = ResourceKit;
@@ -84,7 +104,8 @@
 		32C3F3FB21D5638900350229 /* ResourceKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				32C3F3FC21D5638900350229 /* ResourceKitTests.swift */,
+				32C3F42421D6663000350229 /* Resources */,
+				32C3F42321D6661700350229 /* Sources */,
 				32C3F3FE21D5638900350229 /* Info.plist */,
 			);
 			path = ResourceKitTests;
@@ -93,8 +114,73 @@
 		32C3F40A21D5654400350229 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				32C3F3F121D5638900350229 /* ResourceKit.h */,
+				32C3F40D21D569B500350229 /* Extensions */,
+				32C3F41021D569CC00350229 /* Protocols */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		32C3F40D21D569B500350229 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				32C3F40E21D569B500350229 /* Data+ResourceKit.swift */,
+				32C3F41721D6406000350229 /* Encodable+ResourceKit.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		32C3F41021D569CC00350229 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				32C3F41221D569CC00350229 /* AnyDecoder.swift */,
+				32C3F41521D63FDF00350229 /* AnyEncoder.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		32C3F41921D6441C00350229 /* Test Cases */ = {
+			isa = PBXGroup;
+			children = (
+				32C3F3FC21D5638900350229 /* ResourceKitTests.swift */,
+			);
+			path = "Test Cases";
+			sourceTree = "<group>";
+		};
+		32C3F41A21D6448700350229 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32C3F42121D6476100350229 /* Coordinate.swift */,
+				32C3F41F21D646AA00350229 /* CurrentWeather.swift */,
+				32C3F41B21D6459B00350229 /* Fake.swift */,
+				32C3F41D21D6466200350229 /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32C3F42321D6661700350229 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32C3F41A21D6448700350229 /* Models */,
+				32C3F41921D6441C00350229 /* Test Cases */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		32C3F42421D6663000350229 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32C3F42521D6665600350229 /* Data */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32C3F42521D6665600350229 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				32C3F42621D6793C00350229 /* DarkSkyForcastRequest.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C3F40C21D5677900350229 /* LICENSE in Resources */,
 				32C3F40921D5653300350229 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C3F42721D6793C00350229 /* DarkSkyForcastRequest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C3F40F21D569B500350229 /* Data+ResourceKit.swift in Sources */,
+				32C3F41821D6406000350229 /* Encodable+ResourceKit.swift in Sources */,
+				32C3F41421D569CC00350229 /* AnyDecoder.swift in Sources */,
+				32C3F41621D63FDF00350229 /* AnyEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +306,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				32C3F3FD21D5638900350229 /* ResourceKitTests.swift in Sources */,
+				32C3F41E21D6466200350229 /* Weather.swift in Sources */,
+				32C3F42021D646AA00350229 /* CurrentWeather.swift in Sources */,
+				32C3F41C21D6459B00350229 /* Fake.swift in Sources */,
+				32C3F42221D6476200350229 /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +499,7 @@
 		32C3F40621D5638900350229 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83PU8ZQUC5;
 				INFOPLIST_FILE = ResourceKitTests/Info.plist;
@@ -421,6 +518,7 @@
 		32C3F40721D5638900350229 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83PU8ZQUC5;
 				INFOPLIST_FILE = ResourceKitTests/Info.plist;
