@@ -51,8 +51,8 @@ class ResourceKitTests: XCTestCase {
     func testJSONDecoding() throws {
         let bundle = Bundle(for: type(of: self))
         
-        guard let url = bundle.url(forResource: "DarkSkyForcastRequest", withExtension: "json") else {
-            XCTFail("Missing file: DarkSkyForcastRequest.json")
+        guard let url = bundle.url(forResource: "DarkSkyForecastRequest", withExtension: "json") else {
+            XCTFail("Missing file: DarkSkyForecastRequest.json")
             return
         }
         
