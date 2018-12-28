@@ -11,6 +11,8 @@
 
 import Foundation
 
+// MARK: - Protocol Declaration
+
 // There's no common built-in protocol for all decoder types, so create one.
 
 protocol AnyEncoder {
@@ -19,5 +21,10 @@ protocol AnyEncoder {
     
 }
 
+// MARK: - Protocol Extension | AnyEncoder
+
 extension JSONEncoder: AnyEncoder {}
+
+// MARK: - Protocol Extension | AnyEncoder
+
 extension PropertyListEncoder: AnyEncoder {}

@@ -11,7 +11,11 @@
 
 import Foundation
 
+// MARK: - Protocol Extension | Additions
+
 extension Encodable {
+    
+    // MARK: Instance Methods
     
     func encoded(using encoder: AnyEncoder = JSONEncoder()) throws -> Data {        
         return try encoder.encode(self)

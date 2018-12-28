@@ -12,12 +12,18 @@
 
 import Foundation
 
+// MARK: - Class Extension | Addtions
+
 extension Data {
+    
+    // MARK: Computed Instance Properties
     
     var stringDescription: String {
         return String(data: self, encoding: .utf8) ?? ""
     }
 
+    // MARK: Instance Methods
+    
     // Decode any Decodable type directly using any decoder conforming to the AnyDecoder protocol.
     
     func decoded<T: Decodable>(using decoder: AnyDecoder = JSONDecoder()) throws -> T {

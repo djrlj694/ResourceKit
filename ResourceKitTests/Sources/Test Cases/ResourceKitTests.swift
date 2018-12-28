@@ -14,28 +14,18 @@
 import XCTest
 @testable import ResourceKit
 
+// MARK: - Class Declaration
+
 class ResourceKitTests: XCTestCase {
 
+    // MARK: Instance Properties
+    
     //var coordinate: Coordinate!
     var currentWeather: CurrentWeather!
     var weather: Weather!
     
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        //coordinate = Fake.DarkSky.coordinate
-        //currentWeather = Fake.DarkSky.currentWeather
-        //weather = Fake.DarkSky.weather
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        
-        //coordinate = nil
-        currentWeather = nil
-        weather = nil
-    }
-
+    // MARK: Instance Methods
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -79,6 +69,30 @@ class ResourceKitTests: XCTestCase {
         XCTAssertTrue(currentWeather.precipProbability == 0.9)
         XCTAssertTrue(currentWeather.summary == "Drizzle")
         XCTAssertTrue(currentWeather.icon == "rain")
+    }
+    
+}
+
+// MARK: - Class Extension | Overrides
+
+extension ResourceKitTests {
+    
+    // MARK: Setup and Teardown
+    
+    override func setUp() {
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        //coordinate = Fake.DarkSky.coordinate
+        //currentWeather = Fake.DarkSky.currentWeather
+        //weather = Fake.DarkSky.weather
+    }
+    
+    override func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
+        //coordinate = nil
+        currentWeather = nil
+        weather = nil
     }
     
 }
