@@ -41,23 +41,30 @@ class ResourceKitTests: XCTestCase {
     func testJSONDecoding() throws {
         let bundle = Bundle(for: type(of: self))
         
-        guard let url = bundle.url(forResource: "DarkSkyForecastRequest", withExtension: "json") else {
+        guard
+            let url = bundle.url(
+                forResource: "DarkSkyForecastRequest",
+                withExtension: .json
+            )
+            else {
             XCTFail("Missing file: DarkSkyForecastRequest.json")
             return
         }
         
+        print("url = \(url)")
+        print("url.pathExtension = \(url.pathExtension)")
+        print("url.typeIdentifier = \(url.typeIdentifier ?? "")")
+        print("url.localizedName = \(url.localizedName ?? "")")
+        
         do {
-            let data = try Data(contentsOf: url)
-            weather = try data.decoded()
+            weather = try url.decoded()
             currentWeather = weather.currently
-            
             print(currentWeather)
         }
-        catch let error as NSError {
-            print("Unresolved error \(error)")
+        //catch DecodingError.dataCorrupted(<#T##DecodingError.Context#>)
+        catch let error {
+            print("Unresolved error: \(error)")
         }
-        
-        //print(currentWeather)
         
         // We can't make any assumptions about the data here, since it can update
         // at any time. We'll simply verify that the data is there.

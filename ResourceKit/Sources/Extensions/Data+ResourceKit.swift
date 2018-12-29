@@ -2,7 +2,7 @@
 //  Data+ResourceKit.swift
 //  ResourceKit
 //
-//  Created by Robert L. Jones on 12/28/18.
+//  Created by Robert L. Jones on 12/29/18.
 //  Copyright © 2018 Synthelytics LLC. All rights reserved.
 //
 //  REFERENCES:
@@ -12,9 +12,9 @@
 
 import Foundation
 
-// MARK: - Class Extension | Additions
+// MARK: - Public Class Extension | Additions
 
-extension Data {
+public extension Data {
     
     // MARK: Computed Instance Properties
     
@@ -25,24 +25,28 @@ extension Data {
     /// a byte buffers, such as when downloading a JSON object from a REST API
     /// service.
     
-    var stringDescription: String {
+    var stringDescription: String
+    {
         return String(data: self, encoding: .utf8) ?? ""
     }
 
     // MARK: Instance Methods
     
-    /// Directly decodes any `Decodable` object using any given decoder conforming
-    /// to the `AnyDecoder` protocol.
+    /// Directly decodes any `Decodable` object using any given decoder
+    /// conforming to the `AnyDecoder` protocol.
     ///
-    /// This generic instance method returns a type-inferred value, decoded from an
-    /// object conforming to the `Decodable` protocol.  The decoder used must
+    /// This generic instance method returns a type-inferred value, decoded from
+    //  an object adopting the `Decodable` protocol.  The decoder used must
     /// conform to the `AnyDecoder` protocol but is of type `JSONDecoder` by
     /// default.
     ///
     /// - Parameter decoder: A decoder conforming to the `AnyDecoder` protocol.
-    /// - Returns: A decoded object conforming to the `Decodable` protocol.
+    /// - Returns: A decoded object adopting the `Decodable` protocol.
     
-    func decoded<T: Decodable>(using decoder: AnyDecoder = JSONDecoder()) throws -> T {
+    func decoded<T: Decodable>(
+        using decoder: AnyDecoder = JSONDecoder()
+        ) throws -> T
+    {
         return try decoder.decode(T.self, from: self)
     }
     

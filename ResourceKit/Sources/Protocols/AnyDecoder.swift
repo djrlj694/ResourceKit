@@ -2,7 +2,7 @@
 //  AnyDecoder.swift
 //  ResourceKit
 //
-//  Created by Robert L. Jones on 12/28/18.
+//  Created by Robert L. Jones on 12/29/18.
 //  Copyright © 2018 Synthelytics LLC. All rights reserved.
 //
 //  REFERENCES:
@@ -11,7 +11,7 @@
 
 import Foundation
 
-// MARK: - Protocol Declaration
+// MARK: - Public Protocol Declaration
 
 // There's no common built-in protocol for all decoder types, so create one.
 
@@ -21,7 +21,7 @@ import Foundation
 /// remedies that shortcoming.  Furthermore, it enables type inference-based API
 /// support for decoder tpes conforming to the `AnyDecoder` protocol.
 
-protocol AnyDecoder {
+public protocol AnyDecoder {
     
     /// Returns a type-inferred value, decoded from a `Data` object using a
     /// decoder conforming to the `AnyDecoder` protocol.
@@ -31,10 +31,10 @@ protocol AnyDecoder {
     /// within this object fails to decode, this method throws the corresponding
     /// error.
     ///
-    /// - Parameter type: The type, conforming to the `Decodable` protocol, of
-    /// the value to decode from the supplied `Data` object.
+    /// - Parameter type: The type, adopting the `Decodable` protocol, of the
+    /// value to decode from the supplied `Data` object.
     /// - Parameter data: The `Data` object to decode.
-    /// - Returns: A decoded object conforming to the `Decodable` protocol.
+    /// - Returns: A decoded object adopting the `Decodable` protocol.
     
     func decode<T: Decodable>(_ type: T.Type, from data: Data) throws -> T
     

@@ -2,7 +2,7 @@
 //  AnyEncoder.swift
 //  ResourceKit
 //
-//  Created by Robert L. Jones on 12/28/18.
+//  Created by Robert L. Jones on 12/29/18.
 //  Copyright © 2018 Synthelytics LLC. All rights reserved.
 //
 //  REFERENCES:
@@ -11,7 +11,7 @@
 
 import Foundation
 
-// MARK: - Protocol Declaration
+// MARK: - Public Protocol Declaration
 
 // There's no common built-in protocol for all decoder types, so create one.
 
@@ -20,7 +20,7 @@ import Foundation
 /// Swift has no common built-in protocol for all encoder types.  This protocol
 /// remedies that shortcoming.
 
-protocol AnyEncoder {
+public protocol AnyEncoder {
     
     /// Returns an encoded representation, a `Data` object using an encoder
     /// conforming to the `AnyEncoder` protocol, of a type-inferred value.
@@ -33,9 +33,9 @@ protocol AnyEncoder {
     /// specified by the encoder)—this method throws the
     /// EncodingError.invalidValue(_:_:) error.
     ///
-    /// - Parameter type: The type, conforming to the `Decodable` protocol, of
-    /// the value to decode from the supplied `Data` object.
-    /// - Parameter value: The value, conform to the `Encodable` protocol, to
+    /// - Parameter type: The type, adopting to the `Decodable` protocol, of the
+    /// value to decode from the supplied `Data` object.
+    /// - Parameter value: The value, adopting the `Encodable` protocol, to
     /// encode as a `Data` object using an encoder conforming to the
     /// `AnyEncoder` protocol.
     /// - Returns: A `Data` object, encoded using an encoder conforming to the
