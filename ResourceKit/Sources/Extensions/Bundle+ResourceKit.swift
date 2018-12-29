@@ -14,12 +14,25 @@ public extension Bundle {
     
     // MARK: Instance Methods
     
-     func url(
+    /// Returns the file URL for the resource identified by the specified name
+    /// and file extension.
+    ///
+    /// This generic instance method returns a type-inferred value, decoded from
+    //  an object adopting the `Decodable` protocol.  The decoder used must
+    /// conform to the `AnyDecoder` protocol but is of type `JSONDecoder` by
+    /// default.
+    ///
+    /// - Parameter name: The name of the resource file.
+    /// - Parameter ext: The extension of the resource file.
+    /// - Returns: The file URL for the resource file or nil if the file could
+    /// not be located.
+    
+    func url(
         forResource name: String?, withExtension ext: URL.ExtensionType
         ) -> URL?
-     {
+    {
         return url(forResource: name, withExtension: ext.rawValue)
-     }
+    }
     
 }
 
