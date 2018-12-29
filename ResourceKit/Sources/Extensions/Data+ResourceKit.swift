@@ -12,11 +12,18 @@
 
 import Foundation
 
-// MARK: - Class Extension | Addtions
+// MARK: - Class Extension | Additions
 
 extension Data {
     
     // MARK: Computed Instance Properties
+    
+    /// A Unicode string value representation of the data.
+    ///
+    /// This computed instance property renders its associated `Data` value
+    /// into a Unicode string.  This can be useful when reviewing the content of
+    /// a byte buffers, such as when downloading a JSON object from a REST API
+    /// service.
     
     var stringDescription: String {
         return String(data: self, encoding: .utf8) ?? ""
@@ -24,7 +31,16 @@ extension Data {
 
     // MARK: Instance Methods
     
-    // Decode any Decodable type directly using any decoder conforming to the AnyDecoder protocol.
+    /// Directly decodes any `Decodable` object using any given decoder conforming
+    /// to the `AnyDecoder` protocol.
+    ///
+    /// This generic instance method returns a type-inferred value, decoded from an
+    /// object conforming to the `Decodable` protocol.  The decoder used must
+    /// conform to the `AnyDecoder` protocol but is of type `JSONDecoder` by
+    /// default.
+    ///
+    /// - Parameter decoder: A decoder conforming to the `AnyDecoder` protocol.
+    /// - Returns: A decoded object conforming to the `Decodable` protocol.
     
     func decoded<T: Decodable>(using decoder: AnyDecoder = JSONDecoder()) throws -> T {
         return try decoder.decode(T.self, from: self)

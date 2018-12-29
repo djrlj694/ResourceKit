@@ -17,7 +17,18 @@ extension Encodable {
     
     // MARK: Instance Methods
     
-    func encoded(using encoder: AnyEncoder = JSONEncoder()) throws -> Data {        
+    /// Directly encodes any `Encodable` object using any given encoder
+    /// conforming to the `AnyEncoder` protocol.
+    ///
+    /// This generic instance method returns an encoded representation of a
+    /// value conforming to the `Encodable` protocol.  The encoder used must
+    /// conform to the `AnyEncoder` protocol but is of type `JSONEncoder` by
+    /// default.
+    ///
+    /// - Parameter encoder: An encoder conforming to the `AnyEncoder` protocol.
+    /// - Returns: An encoded object.
+    
+    func encoded(using encoder: AnyEncoder = JSONEncoder()) throws -> Data {
         return try encoder.encode(self)
     }
     

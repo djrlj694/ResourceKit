@@ -15,7 +15,26 @@ import Foundation
 
 // There's no common built-in protocol for all decoder types, so create one.
 
+/// A decoder type.
+///
+/// Swift has no common built-in protocol for all decoder types.  This protocol
+/// remedies that shortcoming.  Furthermore, it enables type inference-based API
+/// support for decoder tpes conforming to the `AnyDecoder` protocol.
+
 protocol AnyDecoder {
+    
+    /// Returns a type-inferred value, decoded from a `Data` object using a
+    /// decoder conforming to the `AnyDecoder` protocol.
+    ///
+    /// If the `Data` object is not syntacticlly valid, this generic instance
+    /// method throws the DecodingError.dataCorrupted(_:) error. If a value
+    /// within this object fails to decode, this method throws the corresponding
+    /// error.
+    ///
+    /// - Parameter type: The type, conforming to the `Decodable` protocol, of
+    /// the value to decode from the supplied `Data` object.
+    /// - Parameter data: The `Data` object to decode.
+    /// - Returns: A decoded object conforming to the `Decodable` protocol.
     
     func decode<T: Decodable>(_ type: T.Type, from data: Data) throws -> T
     
