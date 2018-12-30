@@ -2,7 +2,7 @@
 //  AnyDecoder.swift
 //  ResourceKit
 //
-//  Created by Robert L. Jones on 12/29/18.
+//  Created by Robert L. Jones on 12/30/18.
 //  Copyright © 2018 Synthelytics LLC. All rights reserved.
 //
 //  REFERENCES:
@@ -12,8 +12,6 @@
 import Foundation
 
 // MARK: - Public Protocol Declaration
-
-// There's no common built-in protocol for all decoder types, so create one.
 
 /// A decoder type.
 ///
