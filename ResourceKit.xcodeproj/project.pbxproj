@@ -10,6 +10,7 @@
 		32113AFA21D6939200DE761D /* DarkSkyForecastRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = 32113AF921D6939200DE761D /* DarkSkyForecastRequest.json */; };
 		32113B2021D7AB7400DE761D /* URL+ResourceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113B1F21D7AB7400DE761D /* URL+ResourceKit.swift */; };
 		32113B2221D81C3800DE761D /* Bundle+ResourceKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113B2121D81C3800DE761D /* Bundle+ResourceKit.swift */; };
+		32113B2921D8ECF800DE761D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32113B2821D8ECF800DE761D /* File.swift */; };
 		32C3F3F821D5638900350229 /* ResourceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C3F3EE21D5638900350229 /* ResourceKit.framework */; };
 		32C3F3FD21D5638900350229 /* ResourceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C3F3FC21D5638900350229 /* ResourceKitTests.swift */; };
 		32C3F3FF21D5638900350229 /* ResourceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C3F3F121D5638900350229 /* ResourceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +40,7 @@
 		32113AF921D6939200DE761D /* DarkSkyForecastRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DarkSkyForecastRequest.json; sourceTree = "<group>"; };
 		32113B1F21D7AB7400DE761D /* URL+ResourceKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+ResourceKit.swift"; sourceTree = "<group>"; };
 		32113B2121D81C3800DE761D /* Bundle+ResourceKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+ResourceKit.swift"; sourceTree = "<group>"; };
+		32113B2821D8ECF800DE761D /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		32C3F3EE21D5638900350229 /* ResourceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ResourceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C3F3F121D5638900350229 /* ResourceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceKit.h; sourceTree = "<group>"; };
 		32C3F3F221D5638900350229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				32C3F41221D569CC00350229 /* AnyDecoder.swift */,
 				32C3F41521D63FDF00350229 /* AnyEncoder.swift */,
+				32113B2821D8ECF800DE761D /* File.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			files = (
 				32113B2021D7AB7400DE761D /* URL+ResourceKit.swift in Sources */,
 				32C3F40F21D569B500350229 /* Data+ResourceKit.swift in Sources */,
+				32113B2921D8ECF800DE761D /* File.swift in Sources */,
 				32C3F41821D6406000350229 /* Encodable+ResourceKit.swift in Sources */,
 				32C3F41421D569CC00350229 /* AnyDecoder.swift in Sources */,
 				32113B2221D81C3800DE761D /* Bundle+ResourceKit.swift in Sources */,
