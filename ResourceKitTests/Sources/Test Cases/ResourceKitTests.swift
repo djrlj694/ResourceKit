@@ -2,7 +2,7 @@
 //  ResourceKitTests.swift
 //  ResourceKitTests
 //
-//  Created by Robert L. Jones on 12/27/18.
+//  Created by Robert L. Jones on 12/30/18.
 //  Copyright © 2018 Synthelytics LLC. All rights reserved.
 //
 //  RESOURCES:
@@ -19,6 +19,8 @@ import XCTest
 class ResourceKitTests: XCTestCase {
 
     // MARK: Instance Properties
+    
+    let jsonFile = "DarkSkyForecastRequest.json"
     
     //var coordinate: Coordinate!
     var currentWeather: CurrentWeather!
@@ -39,43 +41,9 @@ class ResourceKitTests: XCTestCase {
     }
 
     func testJSONDecoding() throws {
-        let bundle = Bundle(for: type(of: self))
-        
-        guard
-            let url = bundle.url(
-                forResource: "DarkSkyForecastRequest",
-                withExtension: .json
-            )
-            else {
-            XCTFail("Missing file: DarkSkyForecastRequest.json")
-            return
+        testDecoding(jsonFile) { url in
+            self.testDecodingDarkSkyModels(from: url)
         }
-        
-        print("url = \(url)")
-        print("url.pathExtension = \(url.pathExtension)")
-        print("url.typeIdentifier = \(url.typeIdentifier ?? "")")
-        print("url.localizedName = \(url.localizedName ?? "")")
-        
-        do {
-            weather = try url.decoded()
-            currentWeather = weather.currently
-            print(currentWeather)
-        }
-        //catch DecodingError.dataCorrupted(<#T##DecodingError.Context#>)
-        catch let error {
-            print("Unresolved error: \(error)")
-        }
-        
-        // We can't make any assumptions about the data here, since it can update
-        // at any time. We'll simply verify that the data is there.
-        //XCTAssertFalse(currentWeather.isEmpty)
-        XCTAssertNotNil(weather)
-        XCTAssertNotNil(currentWeather)
-        XCTAssertTrue(currentWeather.temperature == 66.1)
-        XCTAssertTrue(currentWeather.humidity == 0.83)
-        XCTAssertTrue(currentWeather.precipProbability == 0.9)
-        XCTAssertTrue(currentWeather.summary == "Drizzle")
-        XCTAssertTrue(currentWeather.icon == "rain")
     }
     
 }
@@ -100,6 +68,54 @@ extension ResourceKitTests {
         //coordinate = nil
         currentWeather = nil
         weather = nil
+    }
+    
+}
+
+// MARK: - Private Class Extension | Additions
+
+private extension ResourceKitTests {
+
+    func testDecoding(_ file: String, completion: (URL) -> Void) {
+        let bundle = Bundle(for: type(of: self))
+        
+        guard let url = bundle.url(for: file) else {
+            XCTFail("Missing file: \(file)")
+            return
+        }
+        
+        print("url = \(url)")
+        print("url.stem = \(url.stem ?? "")")
+        print("url.extension = \(url.extension ?? "")")
+        print("url.pathExtension = \(url.pathExtension)")
+        print("url.typeIdentifier = \(url.typeIdentifier ?? "")")
+        print("url.localizedName = \(url.localizedName ?? "")")
+        
+        completion(url)
+    }
+
+    func testDecodingDarkSkyModels(from url: URL) {
+        
+        do {
+            weather = try url.decoded()
+            currentWeather = weather.currently
+            print(currentWeather)
+        }
+        //catch DecodingError.dataCorrupted(<#T##DecodingError.Context#>)
+        catch let error {
+            print("Unresolved error: \(error)")
+        }
+
+        // We can't make any assumptions about the data here, since it can update
+        // at any time. We'll simply verify that the data is there.
+        //XCTAssertFalse(currentWeather.isEmpty)
+        XCTAssertNotNil(weather)
+        XCTAssertNotNil(currentWeather)
+        XCTAssertTrue(currentWeather.temperature == 66.1)
+        XCTAssertTrue(currentWeather.humidity == 0.83)
+        XCTAssertTrue(currentWeather.precipProbability == 0.9)
+        XCTAssertTrue(currentWeather.summary == "Drizzle")
+        XCTAssertTrue(currentWeather.icon == "rain")
     }
     
 }
