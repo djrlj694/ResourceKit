@@ -36,18 +36,19 @@ public extension Bundle {
     }
     
     /**
-    Returns the file URL for the resource identified by the specified file.
+     Returns the file URL for the resource identified by the specified file.
  
-    If `extension` is an empty string or `nil`, the returned pathname is the
-    first one encountered where the file name exactly matches name. For details
-    on how localized resources are found, read read [The Bundle Search Pattern](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AccessingaBundlesContents/AccessingaBundlesContents.html#//apple_ref/doc/uid/10000123i-CH104-SW7)
-    in [Bundle Programming Guide](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i).
+     If `extension` is an empty string or `nil`, the returned pathname is the
+     first one encountered where the file name exactly matches name. For details
+     on how localized resources are found, read read [The Bundle Search
+     Pattern](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AccessingaBundlesContents/AccessingaBundlesContents.html#//apple_ref/doc/uid/10000123i-CH104-SW7)
+     in [Bundle Programming Guide](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i).
  
-    - Parameters:
+     - Parameters:
         - file: An object adopting the `File` protocol.
-    - Returns: The file URL for the resource file or `nil` if the file could
-    not be located.
-    */
+     - Returns: The file URL for the resource file or `nil` if the file could
+     not be located.
+     */
     func url(for file: File) -> URL? {
         return url(forResource: file.stem, withExtension: file.extension)
     }
