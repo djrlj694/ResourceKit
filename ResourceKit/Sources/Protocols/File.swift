@@ -6,7 +6,6 @@
 //  Copyright © 2018 Synthelytics LLC. All rights reserved.
 //
 
-
 import Foundation
 
 // MARK: - Public Protocol Declaration
