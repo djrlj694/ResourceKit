@@ -2,7 +2,7 @@
 //  Data+ResourceKit.swift
 //  ResourceKit
 //
-//  Created by Robert L. Jones on 12/30/18.
+//  Created by Robert L. Jones on 1/1/19.
 //  Copyright © 2018 Synthelytics LLC. All rights reserved.
 //
 //  REFERENCES:
@@ -40,7 +40,7 @@ public extension Data {
      to the `AnyDecoder` protocol but is of type `JSONDecoder` by default.
     
      - Parameters:
-        - decoder: A decoder conforming to the `AnyDecoder` protocol.
+         - decoder: A decoder conforming to the `AnyDecoder` protocol.
      - Returns: A decoded object adopting the `Decodable` protocol.
      */
     func decoded<T: Decodable>(using decoder: AnyDecoder = JSONDecoder())
