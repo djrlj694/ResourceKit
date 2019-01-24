@@ -1,6 +1,6 @@
 language: swift
 osx_image: xcode10.1
-xcode_workspace: ResourceKit.xcocdeproj # Path to your xcodeproj folder.
+xcode_workspace: ResourceKit.xcworkspace # Path to your xcodeproj folder.
 xcode_scheme: ResourceKit
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XS Max
 #before_install:
