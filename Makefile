@@ -22,8 +22,8 @@ PREFIX := $(if $(PREFIX), $(PREFIX), $(shell pwd))
 
 PROJECT = $(shell basename $(PREFIX))
 
-SOURCES = Sources/{Controllers,Extensions,Models,Protocols,View Models,Views}
-RESOURCES = Resources/{Data,Fonts,Localization,Media,User Interfaces}
+SOURCES = Sources/{Controllers,Extensions,Models,Protocols,View\ Models,Views}
+RESOURCES = Resources/{Data,Fonts,Localization,Media,User\ Interfaces}
 
 # STDOUT format settings
 
@@ -64,7 +64,7 @@ help: ## Display help.
 setup: ## Make a directory structure.
 	if [ ! -d "./$(PROJECT)" ]; then \
 		echo "Setting up directory tree rooted in ./$(PROJECT)..."; \
-		mkdir -p ./$(PROJECT)/{$(SOURCES),$(RESOURCES)} && echo "..done."; \
+		mkdir -p ./$(PROJECT)/{$(SOURCES),$(RESOURCES)} && echo "done."; \
 	fi
 
 docs: ## Generate API documentation.
