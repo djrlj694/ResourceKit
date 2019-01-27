@@ -7,7 +7,7 @@ xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XS Max
 #    - pod install
 after_success:
     - gem install jazzy
-    - make documentation
+    - make docs
 deploy:
   provider: pages
   skip-cleanup: true
