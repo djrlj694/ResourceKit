@@ -5,26 +5,30 @@ A Swift-native iOS framework for working with files and file types.
 
 ## Installation
 
-I plan to offer in the near future the option to download ResourceKit via [CocoaPods](https://cocoapods.org) or [Carthage](https://github.com/Carthage/Carthage). Until then, copy the ResourceKit folder to your Xcode project.  When you do, enable the following options:
+I plan to offer in the near future the option to download ResourceKit via [CocoaPods](https://cocoapods.org) or [Carthage](https://github.com/Carthage/Carthage). Until then, follow the instructions under **Manual:**.
 
 1.  Copy items if needed
 2.  Create groups
 
-*Swift Package ManagerI:*
+**Swift Package Manager:**
 
 TBD
 
-*CocoaPods:*
+**CocoaPods:**
 
 TBD
 
-*Carthage:*
+**Carthage:**
 
 TBD
 
-*Manual:*
+**Manual:**
 
-TBD
+Copy the ResourceKit folder to your Xcode project.  When you do, enable the following options:
+
+1.  Copy items if needed
+2.  Create groups
+
 
 ## Documentation
 
