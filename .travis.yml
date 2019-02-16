@@ -2,17 +2,12 @@ language: swift
 osx_image: xcode10.1
 xcode_workspace: ResourceKit.xcworkspace # Path to your xcodeproj folder.
 xcode_scheme: ResourceKit
-xcode_destination: platform=iOS Simulator,OS=12.1.4,name=iPhone XS Max
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone XS Max
 #before_install:
 #    - pod install
 after_success:
     - gem install jazzy
     - make docs
-before_deploy:
-    - git config --local user.name "djrlj694"
-    - git config --local user.email "djrlj694@gmail.com"
-    - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-    - git tag $TRAVIS_TAG
 deploy:
   provider: pages
   skip-cleanup: true
