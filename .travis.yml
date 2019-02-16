@@ -9,10 +9,10 @@ after_success:
     - gem install jazzy
     - make docs
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
-  local-dir: docs
-  on:
-    branch: master
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+    local-dir: docs
+    on:
+      branch: master
 
