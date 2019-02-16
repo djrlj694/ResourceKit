@@ -1,5 +1,13 @@
-# Xcode
+# Makefile
+*.dummy
 
+# macOS
+
+## Finder
+.DS_Store
+
+# Xcode
+  
 ## User settings
 xcuserdata/
 
@@ -23,3 +31,21 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+
+## Other
+*.xcuserstate
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+.build/
+
