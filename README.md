@@ -10,6 +10,22 @@ I plan to offer in the near future the option to download ResourceKit via [Cocoa
 1.  Copy items if needed
 2.  Create groups
 
+*Swift Package ManagerI:*
+
+TBD
+
+*CocoaPods:*
+
+TBD
+
+*Carthage:*
+
+TBD
+
+*Manual:*
+
+TBD
+
 ## Documentation
 
 Documentation for the project can be found [here](https://djrlj694.github.io/ResourceKit/).
