@@ -8,15 +8,47 @@ A Swift-native iOS framework for working with files and file types.
 
 ### [Swift Package Manager](https://swift.org/package-manager/)
 
-Add `.Package(url: "git@github.com:djrlj694/ResourceKit.git", majorVersion: 1)` to your `Package.swift` file.
+Add the following to your `Package.swift` file:
+
+```swift
+// swift-tools-version:4.0
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
+import PackageDescription
+
+let package = Package(
+    // ... your project details
+    dependencies: [
+        // As a required dependency
+        .package(url: "https://github.com/djrlj694/ResourceKit.git", majorVersion: 1)
+    ],
+    testDependencies: [
+        // As a test dependency
+        .package(url: "https://github.com/djrlj694/ResourceKit.git", majorVersion: 1)
+    ]
+)
+```
+
+// swift-tools-version:4.0
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
 
 ### [CocoaPods](https://cocoapods.org)
 
-Add `pod "ResourceKit"` to your `Podfile`.
+Add the following to your `Podfile`:
+
+```ruby
+# CocoaPods
+pod 'ResourceKit', '~> 1.0.0'
+```
 
 ### [Carthage](https://github.com/Carthage/Carthage)
 
-Add `github "djrlj694/ResourceKit"` to your `Cartfile`.
+Add the following to your `Cartfile` (package dependency) or `Cartfile.private` (development dependency):
+
+```
+github "djrlj694/ResourceKit" ~> 1.0.0
+```
 
 ### Manual
 
