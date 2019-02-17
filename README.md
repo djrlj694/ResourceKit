@@ -1,7 +1,8 @@
 # ResourceKit
-A Swift-native iOS framework for working with files and file types.
 
 [![Build Status](https://travis-ci.org/djrlj694/TravisCIBlog.svg?branch=master)](https://travis-ci.org/djrlj694/ResourceKit)
+
+A Swift-native iOS framework for working with files and file types.
 
 ## Installation
 
@@ -19,12 +20,12 @@ Add `github "djrlj694/ResourceKit"` to your `Cartfile`.
 
 ### Manual
 
-1.  Clone or download the `ResourceKit` repository.
-2.  Copy the `ResourceKit` folder to your Xcode project.
-3.  Enable the following options:
+1. Clone or download the `ResourceKit` repository.
+2. Copy the `ResourceKit` folder to your Xcode project.
+3. Enable the following options:
 
-  -  Copy items if needed
-  -  Create groups
+    -  Copy items if needed
+    -  Create groups
 
 
 ## Documentation
