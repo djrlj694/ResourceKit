@@ -6,6 +6,10 @@ A Swift-native iOS framework for working with files and file types.
 
 ## Installation
 
+ResourceKit supports several popular package management solutions. Instructions for each such solution are provided below.
+
+If package management is not your thing, manual installation instructions are also provided.
+
 ### [Swift Package Manager](https://swift.org/package-manager/)
 
 Add the following to your `Package.swift` file:
