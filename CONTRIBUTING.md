@@ -1,8 +1,8 @@
 # Contributing to ResourceKit
 
-Contributions toward improving ResourceKit (its source code, documentation, etc.) are welcome via GitHub's pull request process.  By submitting a pull request, you acknowledge and agree to the following:
+Contributions toward improving [ResourceKit](https://github.com/djrlj694/ResourceKit) (its source code, documentation, etc.) are welcome via GitHub's [pull request](https://github.com/djrlj694/ResourceKit/pull/new/master) process.  By submitting a pull request, you acknowledge and agree to the following:
 
-1. You have the right to license your contribution to both the owner of this repository and to the community;
+1. You have the right to license your contribution to ResourceKit's project leader (djrlj694@gmail.com) and the ResourceKit community;
 2. Your contributions are licensed under the [MIT License](LICENSE.md).
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
