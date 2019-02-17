@@ -9,7 +9,7 @@ A Swift-native iOS framework for working with files and file types.
 Add the following to your Swift source code file:
 
 ```swift
-include ResourceKit
+import ResourceKit
 ```
 
 ## Installation
