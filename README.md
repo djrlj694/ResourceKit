@@ -14,7 +14,9 @@ ResourceKit currently supports the following popular [package managers](https://
 
 If package management is not your thing, manual installation instructions are also provided.
 
-For more information on Swift package management or for help in selecting a particular package manager for your project, refer to the following [article](https://www.codementor.io/blog/swift-package-manager-5f85eqvygj) on this topic.
+For more information on Swift package management or for help in selecting a particular package manager for your project, refer to the following articles:
+* [Swift Package Manager vs CocoaPods vs Carthage for All Platforms](https://www.codementor.io/blog/swift-package-manager-5f85eqvygj): Dec 07, 2018
+* [Choosing the Right iOS Dependency Manager](https://aimconsulting.com/insights/blog/choosing-the-right-ios-dependency-manager/): Oct 23, 2018
 
 ### Swift Package Manager
 
