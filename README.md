@@ -29,10 +29,6 @@ let package = Package(
 )
 ```
 
-// swift-tools-version:4.0
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
-
 ### [CocoaPods](https://cocoapods.org)
 
 Add the following to your `Podfile`:
