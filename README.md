@@ -6,11 +6,17 @@ A Swift-native iOS framework for working with files and file types.
 
 ## Installation
 
+ResourceKit currently supports the following popular package management solutions:
+
+* [Swift Package Manager](https://swift.org/package-manager/)
+* [CocoaPods](https://cocoapods.org)
+* [Carthage](https://github.com/Carthage/Carthage)
+
 ResourceKit supports several popular package management solutions. Instructions for each such solution are provided below.
 
 If package management is not your thing, manual installation instructions are also provided.
 
-### [Swift Package Manager](https://swift.org/package-manager/)
+### Swift Package Manager
 
 Add the following to your `Package.swift` file:
 
@@ -33,7 +39,7 @@ let package = Package(
 )
 ```
 
-### [CocoaPods](https://cocoapods.org)
+### CocoaPods
 
 Add the following to your `Podfile`:
 
@@ -42,7 +48,7 @@ Add the following to your `Podfile`:
 pod 'ResourceKit', '~> 1.0.0'
 ```
 
-### [Carthage](https://github.com/Carthage/Carthage)
+### Carthage
 
 Add the following to your `Cartfile` (package dependency) or `Cartfile.private` (development dependency):
 
