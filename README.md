@@ -5,19 +5,19 @@ A Swift-native iOS framework for working with files and file types.
 
 ## Installation
 
-###[Swift Package Manager](https://swift.org/package-manager/)
+### [Swift Package Manager](https://swift.org/package-manager/)
 
 Add `.Package(url: "git@github.com:djrlj694/ResourceKit.git", majorVersion: 1)` to your `Package.swift` file.
 
-###[CocoaPods](https://cocoapods.org)
+### [CocoaPods](https://cocoapods.org)
 
 Add `pod "ResourceKit"` to your `Podfile`.
 
-###[Carthage](https://github.com/Carthage/Carthage)
+### [Carthage](https://github.com/Carthage/Carthage)
 
 Add `github "djrlj694/ResourceKit"` to your `Cartfile`.
 
-###Manual
+### Manual
 
 1.  Clone or download the `ResourceKit` repository.
 2.  Copy the `ResourceKit` folder to your Xcode project.
