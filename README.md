@@ -6,13 +6,15 @@ A Swift-native iOS framework for working with files and file types.
 
 ## Installation
 
-ResourceKit currently supports the following popular package management solutions:
+ResourceKit currently supports the following popular [package managers](https://www.codementor.io/blog/swift-package-manager-5f85eqvygj):
 
-* [Swift Package Manager](https://swift.org/package-manager/)
-* [CocoaPods](https://cocoapods.org)
-* [Carthage](https://github.com/Carthage/Carthage)
+* [Swift Package Manager (SPM)](https://swift.org/package-manager/): Apple's official solution for managing Swift packages; 
+* [CocoaPods](https://cocoapods.org): A centralized dependency manager, written in Ruby, for Swift and Objective-C projects;
+* [Carthage](https://github.com/Carthage/Carthage): A decentralized dependency manager, written in Swift, for Swift and Objective-C projects.
 
 If package management is not your thing, manual installation instructions are also provided.
+
+For more information on Swift package management or for help in selecting a particular package manager for your project, refer to the following [article](https://www.codementor.io/blog/swift-package-manager-5f85eqvygj) on this topic.
 
 ### Swift Package Manager
 
