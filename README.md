@@ -4,6 +4,14 @@
 
 A Swift-native iOS framework for working with files and file types.
 
+## Usage
+
+Add the following to your Swift source code file:
+
+```swift
+include ResourceKit
+```
+
 ## Installation
 
 ResourceKit currently supports the following popular package managers:
@@ -76,7 +84,7 @@ Information on how the documentation was generated and hosted can be found in th
 
 ## Known issues
 
-Currently, there are no known issues.  If you discover any, please kindly submit a [pull request](https://github.com/djrlj694/ResourceKit/pull/new/master).
+Currently, there are no known issues.  If you discover any, please kindly submit a [pull request](CONTRIBUTING.md).
 
 ## License
 
