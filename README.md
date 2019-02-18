@@ -86,7 +86,7 @@ Currently, there are no known issues.  If you discover any, please kindly submit
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+Code and codeless (e.g., documentation) contributions toward improving Makefile-xcode are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on how to become a contributor.
 
 ## License
 
