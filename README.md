@@ -85,6 +85,10 @@ Information on how the documentation was generated and hosted can be found in th
 
 Currently, there are no known issues.  If you discover any, please kindly submit a [pull request](CONTRIBUTING.md).
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## License
 
 ResourceKit is released under the [MIT License](LICENSE.md).
