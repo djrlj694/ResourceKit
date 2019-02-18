@@ -71,7 +71,6 @@ github "djrlj694/ResourceKit" ~> 1.0.0
 1. Clone or download the `ResourceKit` repository.
 2. Copy the `ResourceKit` folder to your Xcode project.
 3. Enable the following options:
-
     -  Copy items if needed
     -  Create groups
 
