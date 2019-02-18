@@ -91,3 +91,7 @@ Code and codeless (e.g., documentation) contributions toward improving Makefile-
 ## License
 
 ResourceKit is released under the [MIT License](LICENSE.md).
+
+## References
+
+See [REFERENCES.md](REFERENCES.md) for a list of sources that I found helpful or inspirational when learning new topics, troubleshooting bugs, authoring documentation, etc.
