@@ -75,7 +75,6 @@ github "djrlj694/ResourceKit" ~> 1.0.0
     -  Copy items if needed
     -  Create groups
 
-
 ## Documentation
 
 Documentation for the project can be found [here](https://djrlj694.github.io/ResourceKit/).
