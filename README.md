@@ -4,8 +4,6 @@
 
 A Swift-native iOS framework for working with files and file types.
 
-URL = %URL%
-
 ## Usage
 
 Add the following to your Swift source code file:
