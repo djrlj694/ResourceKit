@@ -1,4 +1,8 @@
-# ResourceKit
+---
+name: ResourceKit
+---
+
+# {{page.name}}
 
 [![Build Status](https://travis-ci.org/djrlj694/TravisCIBlog.svg?branch=master)](https://travis-ci.org/djrlj694/ResourceKit)
 
