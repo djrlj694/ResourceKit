@@ -3,7 +3,7 @@
 //  ResourceKitTests
 //
 //  Created by Robert L. Jones on 12/30/18.
-//  Copyright © 2018 Synthelytics LLC. All rights reserved.
+//  Copyright © 2019 djrlj694.dev. All rights reserved.
 //
 //  RESOURCES:
 //  1. https://www.objc.io/blog/2018/02/13/string-to-data-and-back/
