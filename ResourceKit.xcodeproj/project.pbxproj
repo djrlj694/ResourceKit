@@ -250,7 +250,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Synthelytics LLC";
+				ORGANIZATIONNAME = "djrlj694.dev";
 				TargetAttributes = {
 					32C3F3ED21D5638900350229 = {
 						CreatedOnToolsVersion = 10.1;
