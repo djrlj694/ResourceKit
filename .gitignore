@@ -1,3 +1,15 @@
+# General
+*.err
+*.orig
+*.log
+*.rej
+*.zip
+*.vi
+
+# Diff
+*.patch
+*.diff
+
 # Dropbox settings and caches
 .dropbox
 .dropbox.attr
@@ -6,45 +18,12 @@
 # Makefile
 *.dummy
 
-# macOS
+# macOS: General
+.AppleDouble
+.LSOverride
 
-## Finder
+# macOS: Finder
 .DS_Store
-
-# Xcode
-  
-## User settings
-xcuserdata/
-
-## Build generated
-build/
-DerivedData/
-
-## Compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
-*.xcscmblueprint
-*.xccheckout
-
-## Compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
-*.moved-aside
-
-## Various settings
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-
-## Other
-*.xcuserstate
-
-## Obj-C/Swift specific
-*.hmap
-*.ipa
-*.dSYM.zip
-*.dSYM
 
 # Swift Package Manager
 #
@@ -54,9 +33,62 @@ DerivedData/
 # Package.resolved
 .build/
 
+# Vim: Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Vim: Session
+Session.vim
+
+# Vim: Temporary
+.netrwhist
+*~
+
+# Vim: Auto-generated tag files
+tags
+
+# Vim: Persistent undo
+[._]*.un~
+
 # VSCode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Xcode: User settings
+xcuserdata/
+
+# Xcode: Build generated
+build/
+DerivedData/
+
+# Xcode: Compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+# Xcode: Compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+*.moved-aside
+
+# Xcode: Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode: Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Xcode: Other
+*.xcuserstate
