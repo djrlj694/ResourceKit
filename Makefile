@@ -1,21 +1,21 @@
 # Makefile
-# Copyright © 2019 Synthelytics LLC. All rights reserved.
+# Copyright © 2019 djrlj694.dev. All rights reserved.
 #
-# ==============================================================================
+#==============================================================================#
 # PROGRAM: Makefile
 # AUTHORS: Robert L. Jones
-# COMPANY: Synthelytics LLC
+# COMPANY: djrlj694.dev
 # VERSION: 1.0
 # CREATED: 04FEB2019
 # REVISED: 15FEB2019
-# ==============================================================================
+#==============================================================================#
 
 # .ONESHELL:
 # .EXPORT_ALL_VARIABLES:
 
-# ==============================================================================
+#==============================================================================#
 # Variables
-# ==============================================================================
+#==============================================================================#
 
 # Settings
 
@@ -128,8 +128,8 @@ DONE = $(FG_GREEN)done$(RESET).\n
 FAILED = $(FG_RED)failed$(RESET).\n
 IGNORE = $(FG_YELLOW)ignore$(RESET).\n
 
-# ==============================================================================
-# Phony Targets
+#==============================================================================#
+# PHONY TARGETS
 #
 # A phony target is a convenient name for a set of commands to be executed when
 # an explicit request is made.  Its commands won't run if a file of the same
@@ -137,7 +137,7 @@ IGNORE = $(FG_YELLOW)ignore$(RESET).\n
 #
 # 1. To avoid a conflict with a file of the same name;
 # 2. To improve performance.
-# ==============================================================================
+#==============================================================================#
 
 # Main phony targets
 
@@ -251,18 +251,18 @@ test-vars-some: ## Shows only a few custom Makefile variables.
 	@echo
 	$(foreach v, $(VARIABLES_TO_SHOW), $(info $(v) = $($(v))))
 
-# ==============================================================================
-# Directory Targets
-# ==============================================================================
+#==============================================================================#
+# DIRECTORY TARGETS
+#==============================================================================#
 
 %/.: | $(LOG) ## Makes a directory tree.
 	@printf "Making directory tree $(DIR_VAR)..."
 	@mkdir -p $(@D) >$(LOG) 2>&1; \
 	$(RESULT)
 
-# ==============================================================================
-# File Targets
-# ==============================================================================
+#==============================================================================#
+# FILE TARGETS
+#==============================================================================#
 
 # https://stackoverflow.com/questions/32672222/how-to-download-a-file-only-if-more-recently-changed-in-makefile
 %.download: | $(LOG) ## Downloads a file.
@@ -304,8 +304,8 @@ Framework.podspec: Framework.podspec.download ## Makes a Framework.podspec file.
 
 ISSUE_TEMPLATE.md: ISSUE_TEMPLATE.md.download ## Makes a ISSUE_TEMPLATE.md file.
 
-# ==============================================================================
-# Intermediate Targets
+#==============================================================================#
+# INTERMEDIATE TARGETS
 #
 # An intermediate target corresponds to a file that is needed on the way from a
 # source file to a target file.  It typically is a temporary file that is needed
@@ -313,7 +313,7 @@ ISSUE_TEMPLATE.md: ISSUE_TEMPLATE.md.download ## Makes a ISSUE_TEMPLATE.md file.
 # automatically removes files that are identified as intermediate targets.  In
 # other words, such files that did not exist before a "make" run executed do not
 # exist after a "make" run.
-# ==============================================================================
+#==============================================================================#
 
 .INTERMEDIATE: .gitignore.download
 
@@ -330,9 +330,9 @@ ISSUE_TEMPLATE.md: ISSUE_TEMPLATE.md.download ## Makes a ISSUE_TEMPLATE.md file.
 $(LOG): ## Makes a temporary file capturring a shell command error.
 	@touch $@
 
-# ==============================================================================
+#==============================================================================#
 # Second Expansion Targets
-# ==============================================================================
+#==============================================================================#
 
 #.SECONDEXPANSION:
 #$(PREFIX)/%.dummy: $$(@D)/.dummy | $$(@D)/. ## Make a directory tree.
