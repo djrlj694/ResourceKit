@@ -3,7 +3,7 @@
 //  ResourceKit
 //
 //  Created by Robert L. Jones on 12/30/18.
-//  Copyright © 2018 Synthelytics LLC. All rights reserved.
+//  Copyright © 2019 djrlj694.dev. All rights reserved.
 //
 //  REFERENCES:
 //  1. https://github.com/romiphadte/WWDC_2015/blob/master/WWDC_App/AudioController.m
