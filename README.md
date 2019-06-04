@@ -80,7 +80,7 @@ Documentation for the project can be found [here](https://djrlj694.github.io/Res
 
 Information on how the documentation was generated and hosted can be found in the blog: [Generate & Host your iOS Documentation](https://medium.com/@jonathan2457/generate-host-your-ios-documentation-39e21b382ce8).
 
-## Known issues
+## Known Issues
 
 Currently, there are no known issues.  If you discover any, please kindly submit a [pull request](CONTRIBUTING.md).
 
