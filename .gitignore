@@ -92,3 +92,7 @@ DerivedData/
 
 # Xcode: Other
 *.xcuserstate
+
+# Other
+docs/
+
